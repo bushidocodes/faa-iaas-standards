@@ -8,7 +8,7 @@
         <title>16C.119B4 IaaS Standards</title>
 
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 
         <!--Adding Roboto font from Google Fonts-->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
@@ -28,7 +28,6 @@
         <div class="container">
             <div id="navbar-example">
                 <ul class="nav nav-tabs" role="tablist">
-                ...
                 </ul>
             </div>
             <div class="row">
@@ -50,22 +49,22 @@
                 <div class="col-md-12">
                     <p>AIT Business Plan Item 16C.119B4 - Core Activity: FAA Cloud Migration & Governance Target 1</p>
                     <p>Owner: Sean P. McBride, Cloud Solutions Architect Network & Data Center Planning & Design Branch AFN-001, AIF-130 (202-267-6285)</p>
-                    <p>Target 2: Develop IaaS Standards Document for ANG, NAS and non-NAS platforms. Carryover from FY15. AIF will develop a standards design document for ANG, NAS and non-NAS platforms for infrastructure as a service (IaaS) operating domains. Obtain ITMT approval. Due March 31,2016</p>
+                    <p>Target 2: Develop IaaS Standards Document for ANG, NAS and non-NAS platforms. Carryover from FY15. AIF will develop a standards design document for ANG, NAS and non-NAS platforms for infrastructure as a service (IaaS) operating domains. Obtain ITMT approval. Due March 31, 2016</p>
                     <h2>Background</h2>
                     <p>Since 2010, the Federal CIO Council has promoted shared services, data center consolidation, and Cloud First as key initiatives for all federal agencies. The FAA is now several years into this transformation, and with the recent award of the FAA Cloud Services (FCS) contract to a multi-vendor team led by CSGov, the FAA Cloud Program Team and supporting AIT personnel are quickly moving to work with Team CSGov and achieve Initial Operating Capability (IOC) for the Mission Support Government Community Cloud environment and the Mission Support Colocation environment in 2016.</p>
-                    <p>Given the phased approach to deploying FCS services and the fact that the deployment of ANG and NAS cloud domains is anticipated to be years out, the standards outlined in this document shall be treated in greater detail for non-NAS platforms that shall achieve IOC in FY16 than for NAS or ANG platforms that shall be achieve IOC in subsequent years.</p>
+                    <p>Given the phased approach to deploying FCS services and the fact that the deployment of ANG and NAS cloud domains is anticipated to be years out, the standards outlined in this document shall be treated in greater detail for non-NAS platforms that shall achieve IOC in FY16 than for NAS or ANG platforms that shall achieve IOC in subsequent years.</p>
                     <h2>Purpose</h2>
                     <p>In 2016, the FAA approved AIT Business Plan Item 15C.119B1 Target 2, which identified and documented standard configurations and platforms required for architecting environments for business owners. This document provided high level outlines of blueprints that shall be implemented as stem cell images and automation assets, including the following:
                         <ul>
                             <li>the version of the operating system</li>
                             <li>the patch level of the operating system</li>
-                            <li>the networking configuration of operating system</li>
+                            <li>the networking configuration of the operating system</li>
                             <li>the software stack installed on top of the operating system, up through the specific versions and configurations of middleware components</li>
                         </ul>
                     </p>
                     <p>This document expands upon the content in that document by holistically outlining three sets of Infrastructure as a Service (IaaS) standards tied to a proposed tri-modal model that aligns to increasing levels of maturity in the adoption of automation and agile development processes. This approach provides core standards for applications at intermediate levels of transformation to enable Line of Business (LOB) and IT shared services leaders to collaboratively make business decisions about whether an application should be in low, medium, or high gear.</p>
                 </div>
-            </div>]
+            </div>
             <!--Current attempting to add button functionality similar to the USDS Playbook. I'm having issues witht the Bootstrap button classes used on the anchor tags ~SPM on 2FEB16 -->
             <!--<div class="row">
                 <div class="col-md-12">
@@ -84,7 +83,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p>Unlike other cloud service delivery models, Infrastructure as a Service provides a number of alternate onramps to the cloud  that span from minimizing changes and shipping existing on-premise VMs to full refactoring of applications to take advantage of new cloud architectural patterns. As a result, this document proposes and aligns IaaS standards across a  tri-modal approach to cloud services.</p>
+                    <p>Unlike other cloud service delivery models, Infrastructure as a Service provides a number of alternate onramps to the cloud that span from minimizing changes and shipping existing on-premise VMs to full refactoring of applications to take advantage of new cloud architectural patterns. As a result, this document proposes and aligns IaaS standards across a tri-modal approach to cloud services.</p>
                 </div>
             </div>
             <div class="row">
@@ -92,7 +91,7 @@
                     <img class="img-responsive small-cog" src="images/PngMedium-Cog.png" alt="Image of gear ">
                 </div>
                 <div class="col-md-9">
-                    <p>The first approach, called Low Gear, provides a minimum viable set of standards for legacy applications migrating to the cloud with little to no code or configuration changes. These applications are moving to the cloud by simply exporting existing virtual machines images from on premise ESXi environments as VMDK or OVF files and attaching the files to service orders for CCSD 6.1.1 monthly-priced virtual machines using the process outlined by section C.4.4.2.4 of the FCS contract. Once in the cloud, a systems administrator boots the virtual machine, assigns new IP addresses from the deployment environment's block of addresses, and installs agents and client software to integrate with the Agility Platform and other monitoring and control components in the cloud. This approach offers the quickest and easiest path to migrating systems to the cloud, but at the expense of carrying over complex images and forgoing the flexibility to pursue more advanced features such as horizontal scalability. Once in the cloud, the application is operationally managed just as it is today, including manual testing, manual deployment through the existing Dev/Test, Pre-Prod, Prod pipeline.</p>
+                    <p>The first approach, called Low Gear, provides a minimum viable set of standards for legacy applications migrating to the cloud with little to no code or configuration changes. These applications are moving to the cloud by simply exporting existing virtual machine images from on premise ESXi environments as VMDK or OVF files and attaching the files to service orders for CCSD 6.1.1 monthly-priced virtual machines using the process outlined by section C.4.4.2.4 of the FCS contract. Once in the cloud, a systems administrator boots the virtual machine, assigns new IP addresses from the deployment environment's block of addresses, and installs agents and client software to integrate with the Agility Platform and other monitoring and control components in the cloud. This approach offers the quickest and easiest path to migrating systems to the cloud, but at the expense of carrying over complex images and forgoing the flexibility to pursue more advanced features such as horizontal scalability. Once in the cloud, the application is operationally managed just as it is today, including manual testing, manual deployment through the existing Dev/Test, Pre-Prod, Prod pipeline.</p>
                 </div>
             </div>
             <div class="row">
@@ -100,7 +99,7 @@
                     <img class="img-responsive medium-cog" src="images/PngMedium-Cog.png" alt="Image of gear ">
                 </div>
                 <div class="col-md-9">
-                    <p>The second approach, called Medium Gear, provides an interim set of standards for legacy applications that benefit from refactoring onto standard configurations of images and automation assets orderable from the deployment environment's service catalog. These applications are moving to the cloud through the process of re-implementing the application architecture as an orchestration script that provides automated deployment of the solution stack. This re-implementation is an iterative development process of creating a new top-level orchestration script using an existing catalog of "stem cell" base images and automation assets. In the case of the FCS cloud environment, this is done by creating a top-level Agility Blueprint through the Agility Designer Tool using Agility blueprints, workloads, and packages. If architecturally appropriate, these Agility Blueprints would implement horizontal scaling through scaling plans that tie to CCSD 6.1.1 monthly-priced virtual machines with the operating system and elasticity supplemental features. Once the application architecture is in place and tested, a systems administrator manually migrates over the application logic and data. Once in the cloud, the application logic and data is operationally managed just as it is today, but all updates to the underlying middleware and operating system are now handled as feature requests and updates to the version-controlled blueprint and automation assets that implement environment that the application runs on top of.</p>
+                    <p>The second approach, called Medium Gear, provides an interim set of standards for legacy applications that benefit from refactoring onto standard configurations of images and automation assets orderable from the deployment environment's service catalog. These applications are moving to the cloud through the process of re-implementing the application architecture as an orchestration script that provides automated deployment of the solution stack. This re-implementation is an iterative development process of creating a new top-level orchestration script using an existing catalog of "stem cell" base images and automation assets. In the case of the FCS cloud environment, this is done by creating a top-level Agility Blueprint through the Agility Designer Tool using Agility blueprints, workloads, and packages. If architecturally appropriate, these Agility Blueprints would implement horizontal scaling through scaling plans that tie to CCSD 6.1.1 monthly-priced virtual machines with the operating system and elasticity supplemental features. Once the application architecture is in place and tested, a systems administrator manually migrates over the application logic and data. Once in the cloud, the application logic and data is operationally managed just as it is today, but all updates to the underlying middleware and operating system are now handled as feature requests and updates to the version-controlled blueprint and automation assets that implement the environment that the application runs on top of.</p>
                 </div>
             </div>
             <div class="row">
@@ -108,7 +107,7 @@
                     <img class="img-responsive large-cog" src="images/PngMedium-Cog.png" alt="Image of gear ">
                 </div>
                 <div class="col-md-9">
-                    <p>The third approach, called High Gear, provides standards for new and existing applications that seek full adoption of agile methodologies as outlined in the U.S. Digital Services Playbook. This extends the automated deployment infrastructure involved in Medium Gear to a full DevOps toolchain by adding continuous integration components and automated testing. In the case of the FCS cloud environment, this DevOps toolchain shall be managed by the Agility Release Manager. Depending on the complexity of the application's architecture, a high-gear application may elect to bypass the complexity of IaaS and implement a microservices approach by deploying containers or alternate higher-level deployment units using platform as a server (PaaS). Unlike traditional applications, the full operational management of the application is controlled by a strong product manager that controls the entire deployment pipeline and manages work that spans agile development teams and agile infrastructure teams. In order to execute on this new approach, the FAA shall likely require a DevOps support team that can perform direct action as a digital services team and provide DevOps Dojo support to teach ADE and AIF personnel the cultural and technical practices needed to establish agile development teams and agile infrastructure teams with a common DevOps culture.</p>
+                    <p>The third approach, called High Gear, provides standards for new and existing applications that seek full adoption of agile methodologies as outlined in the U.S. Digital Services Playbook. This extends the automated deployment infrastructure involved in Medium Gear to a full DevOps toolchain by adding continuous integration components and automated testing. In the case of the FCS cloud environment, this DevOps toolchain shall be managed by the Agility Release Manager. Depending on the complexity of the application's architecture, a high-gear application may elect to bypass the complexity of IaaS and implement a microservices approach by deploying containers or alternate higher-level deployment units using platform as a Service (PaaS). Unlike traditional applications, the full operational management of the application is controlled by a strong product manager that controls the entire deployment pipeline and manages work that spans agile development teams and agile infrastructure teams. In order to execute on this new approach, the FAA shall likely require a DevOps support team that can perform direct action as a digital services team and provide DevOps Dojo support to teach ADE and AIF personnel the cultural and technical practices needed to establish agile development teams and agile infrastructure teams with a common DevOps culture.</p>
                 </div>
             </div>
             <div class="row">
@@ -121,11 +120,11 @@
                         </li>
                         <li>
                             <h4>Configure the Application's Virtual Machines to scale vertically by resizing the FCS CLIN</h4>
-                            <p>Despite the fact that elasticity as treated by NIST standards and the FCS contract equates to the horizontal scaling of nodes, it is also technically possible to vertically scale virtual machines by shutting down a virtual machines, resizing the virtual machine to a CCSD 6.6.1 larger size service class code or invoking a vertical scaling service class code such as Vm_VPUA_ADD or adding a higher network I/O bandwidth supplemental feature, and then booting the virtual machine back up. While this is disruptive and likely requires downtime, this approach allows existing applications that do not have an architecture suitable to horizontal scaling a quick and easy path to increased capacity. To the greatest degree possible by the FCS contract and the Agility Platform, low gear applications should use this capability to resize applications in anticipation of known spikes in demand or in response to degraded user experience.</p>
+                            <p>Despite the fact that elasticity as treated by NIST standards and the FCS contract equates to the horizontal scaling of nodes, it is also technically possible to vertically scale virtual machines by shutting down a virtual machine, resizing the virtual machine to a CCSD 6.6.1 larger size service class code or invoking a vertical scaling service class code such as Vm_VPUA_ADD or adding a higher network I/O bandwidth supplemental feature, and then booting the virtual machine back up. While this is disruptive and likely requires downtime, this approach allows existing applications that do not have an architecture suitable to horizontal scaling a quick and easy path to increased capacity. To the greatest degree possible by the FCS contract and the Agility Platform, low gear applications should use this capability to resize applications in anticipation of known spikes in demand or in response to degraded user experience.</p>
                         </li>
                         <li>
                             <h4>Schedule periodic Snapshots of the Application's Virtual Machines.</h4>
-                            <p>At a minimum, applications shall perform disaster recovery by backing up volumes of all VMs to snapshots. In the FCS environments, this is can be automated by creating an Agility Platform Event Policy with a periodic event time that initiates the creation of snapshots. Recovery would occur by reverting volumes to an existing snapshot. Note: AWS has backend restrictions that limit an account to five simultaneous snapshot actions at a single time.</p>
+                            <p>At a minimum, applications shall perform disaster recovery by backing up volumes of all VMs to snapshots. In the FCS environments, this can be automated by creating an Agility Platform Event Policy with a periodic event time that initiates the creation of snapshots. Recovery would occur by reverting volumes to an existing snapshot. Note: AWS has backend restrictions that limit an account to five simultaneous snapshot actions at a single time.</p>
                         </li>
                         <li>
                             <h4>If Disaster Recovery requirements exceed the capabilities of snapshots, configure a cold or warm standby in a separate availability zone, region, or data center and install and configure replication using existing tools</h4>
@@ -147,7 +146,7 @@
                     <ol>
                         <li>
                             <h4>Separate application tiers into separate pools of virtual machines running in separate subnets</h4>
-                            <p>Excepting the most trivial of applications, application tiers shall be refactored into separate pools of one or more virtual machines running in seperate subnets. This achieves greater functional decoupling of the applications tiers and enables greater flexibility in implementing security controls between those tiers usand tighten down the security controls between these tiers using Network ACLs or other security models provided by the deployment environment.</p>
+                            <p>Excepting the most trivial of applications, application tiers shall be refactored into separate pools of one or more virtual machines running in separate subnets. This achieves greater functional decoupling of the application tiers and enables greater flexibility in tightening security controls between those tiers using Network ACLs or other security models provided by the deployment environment.</p>
                         </li>
                         <li>
                             <h4>Automate deployment of Operating Systems using Stem Cell Images</h4>
@@ -158,24 +157,14 @@
                             <p> In concert with the base Stem Cell images discussed above, the FAA shall automate the installation and configuration of middleware using automation assets developed on a common automated configuration management platform that spans all FAA data centers and cloud environments. These automation assets shall deploy the standard configurations of software stacks, such as those outlined in AIT Business Plan Item 15C.119B1, Standard Configurations and Platforms. Examples of automated configuration management tools include
                             <a href="http://www.puppetlabs.com">Puppet</a>,
                             <a href="https://www.chef.io/chef/">Chef</a>, and
-                            <a href="http://www.ansible.com/"> Ansible </a>
-                            </h4>
+                            <a href="http://www.ansible.com/">Ansible</a>
+                            </p>
                         </li>
-                        <li>
-                            <h4>Automate deployment of Applications using an Orchestration Engine.</h4>
-                            <p>TO-DO</p>
-                        </li>
-
                         <li>
                             <h4>Develop Stem Cell Images, Automation Assets, and Orchestration Scripts using agile techniques and software configuration management (SCM) tools.</h4>
-                            <p>In an <a href="https://www.thoughtworks.com/insights/blog/infrastructure-code-reason-smile">Infrastructure as Code</a> world, traditional operations teams need to form agile infrastrucutre teams capable of building and managing a service catalog of automation assets using the same agile techniques and professional software configuration management tools used by application developers. In a DevOps setting, these agile infrastructure teams work closely with agile application / digital services teams to smooth out the traditional division between development and operations. The assets produced by these agile infrastructure teams populate a service catalog and are consumed by application teams on an as needed basis. The application teams are consumers of these infrastructure automation assets and stakeholders that make feature and function requests and potentially fork automation code and initiate pull requests. The agile infrastructure team works with configuration management and security to get the asset pre-approved and pre-authorized in order to minimize the authorization footprint for individual FAA applications.</p>
-                        </li>
-                        <li>
-                            <h4>Applications combine stem cell images, automation assets, and nested orchestration scripts into a single master orchestration script that acts as the major deployment unit for applications as they move through dev, test, and prod throughout the software development lifecycle. These orchestration scripts shall programmatically define scale units and scaling criteria for deployment environments that provide elasticity.</h4>
-                            <p></p>
-                        </li>
-                        <li>
-                            <h4>Updates to all software installed and configured by automation assets shall not occur via manual systems administration, but shall occur across the FAA's portfolio of applications by updating the automation asset and having an automated configuration management system push out the update. In situations where manual systems administrations is required, this shall occur using a command line interface such as BASH shell or PowerShell and all activities shall be logged and retained.</h4>
+                            <p>In an <a href="https://www.thoughtworks.com/insights/blog/infrastructure-code-reason-smile">Infrastructure as Code</a> world, traditional operations teams need to form agile infrastructure teams capable of building and managing a service catalog of automation assets using the same agile techniques and professional software configuration management tools used by application developers. In a DevOps setting, these agile infrastructure teams work closely with agile application / digital services teams to smooth out the traditional division between development and operations. The assets produced by these agile infrastructure teams populate a service catalog and are consumed by application teams on an as needed basis. The application teams are consumers of these infrastructure automation assets and stakeholders that make feature and function requests and potentially fork automation code and initiate pull requests. The agile infrastructure team works with configuration management and security to get the asset pre-approved and pre-authorized in order to minimize the authorization footprint for individual FAA applications.</p>
+                            <p>Applications combine stem cell images, automation assets, and nested orchestration scripts into a single master orchestration script that acts as the major deployment unit for applications as they move through dev, test, and prod throughout the software development lifecycle. These orchestration scripts shall programmatically define scale units and scaling criteria for deployment environments that provide elasticity.</p>
+                            <p>Updates to all software installed and configured by automation assets shall not occur via manual systems administration, but shall occur across the FAA's portfolio of applications by updating the automation asset and having an automated configuration management system push out the update. In situations where manual systems administration is required, this shall occur using a command line interface such as BASH shell or PowerShell and all activities shall be logged and retained.</p>
                         </li>
                     </ol>
                 </div>
@@ -186,11 +175,11 @@
                     <ol>
                         <li>
                             <h4>Use the U.S. Digital Services Assets as a starting point</h4>
-                            <p>Members of the U.S. Digital Services community have spent considerable time developing a general framework for designing cloud-native digital services. All High Gear applications shall use the <a href="https://playbook.cio.gov/">U.S. Digital Services Playbook</a> and the <a href="https://playbook.cio.gov/designstandards/">U.S. Web Design Standards</a> as a starting point.
+                            <p>Members of the U.S. Digital Services community have spent considerable time developing a general framework for designing cloud-native digital services. All High Gear applications shall use the <a href="https://playbook.cio.gov/">U.S. Digital Services Playbook</a> and the <a href="https://playbook.cio.gov/designstandards/">U.S. Web Design Standards</a> as a starting point.</p>
                         </li>
                         <li>
                             <h4>Develop Cloud-Native Applications by Default</h4>
-                            <p>Develop highly distributed applications that implement application tiers as load-balanced pools of loosely-coupled stateless nodes that communicate over message queues. Implement horizontal scaling and design for failure using automated health checks that look for node failutre and automatically restore service.
+                            <p>Develop highly distributed applications that implement application tiers as load-balanced pools of loosely-coupled stateless nodes that communicate over message queues. Implement horizontal scaling and design for failure using automated health checks that look for node failure and automatically restore service.</p>
                         </li>
                         <li>
                             <h4>Maximize use of services capable of deployment to alternative CSPs</h4>
@@ -206,51 +195,30 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Closing Thoughts</h2>
+                    <p>In order to do this, TechOps, NextGen, and AIF personnel must work to embrace and extend existing investments in infrastructure technologies.</p>
                     <ol>
                         <li>
                             <h4>Judiciously bring battle-tested innovation from the cloud back into FAA data centers</h4>
-                            <p>While the FAA has a stated objective to migrate application to the cloud en masse in order to minimize our data center footprint, there shall likely continue to be a subset of mission-critical FAA applications that shall continue to run within FAA data centers, either due to security or regulatory requirements or due to functional low-latency dependencies on scale-up servers such as mainframes. This shall likely be especially true of some of the core systems and applications powering the National Airspace System. In these instances, the FAA should consider judiciously leveraging concepts such as stem cell images, automated configuration management, and orchestration engines within on-premise FAA data centers. In order to do this, TechOps, NextGen, and AIF personnel must
-
-
-
-                                This should be executed in a manner that embraces and extends existing investments in infrastrucutre technologies
-
-
-
-                                Avoid Lock in by retooling FAA Data Centers for Medium Gear and High Gear Applications
-
-                                While the FCS cloud is a key enabler
-
-
-                                The FAA shall evolve the current on-premise VMWare environments into private clouds in order to be able to host �cloud native� applications inside of FAA facilities. This shall require a common automated configuration management tool for the FCS cloud domains and the on-premise data centers. This shall also require an orchestration engine similar that provides similar functionality to the FCS cloud domains. To enable full reuse of IaaS orchestration scripts, this would require the FAA to license and administer instances of the Agility Platform to run on top of our existing FAA data centers. As the FAA pursues Platform as a Service (PaaS), this will require the FAA to license and administer additional cloud middleware components capable of hosting and orchestrating containers or alternative PaaS units of deployment.</p>
+                            <p>While the FAA has a stated objective to migrate application to the cloud en masse in order to minimize our data center footprint, there shall likely continue to be a subset of mission-critical FAA applications that shall continue to run within FAA data centers, either due to security or regulatory requirements or due to functional low-latency dependencies on scale-up servers such as mainframes. This shall likely be especially true of some of the core systems and applications powering the National Airspace System. In these instances, the FAA should consider judiciously leveraging concepts such as stem cell images, automated configuration management, and orchestration engines within on-premise FAA data centers.</p>
+                        </li>
+                        <li>
+                            <h4>Avoid Lock-in by Retooling FAA Data Centers for Medium Gear and High Gear Applications</h4>
+                            <p>While the FCS cloud is a key enabler, the FAA shall evolve the current on-premise VMWare environments into private clouds in order to be able to host "cloud native" applications inside of FAA facilities. This shall require a common automated configuration management tool for the FCS cloud domains and the on-premise data centers. This shall also require an orchestration engine that provides similar functionality to the FCS cloud domains. To enable full reuse of IaaS orchestration scripts, this would require the FAA to license and administer instances of the Agility Platform to run on top of our existing FAA data centers. As the FAA pursues Platform as a Service (PaaS), this will require the FAA to license and administer additional cloud middleware components capable of hosting and orchestrating containers or alternative PaaS units of deployment.</p>
+                        </li>
+                        <li>
+                            <h4>Consider Latency Throughout Migrations</h4>
+                            <p>To the greatest degree possible, Internet-facing web applications shall be hosted outside of the Trusted Internet Connection (TIC) in entirety. Depending on the degree of integration with FAA backend systems, this may not be feasible. If this is the case, the bandwidth and latency that traverses the FTI WAN SDP and the TIC should be closely examined to ensure acceptable end-user performance without adverse impact to other FAA applications. Until the FAA has access to DHS-certified "TIC Ready" internet gateways from our CSPs, an Internet-facing "cloud native" application that integrates with legacy backend FAA systems may not make business sense running in an FCS cloud domain depending on the bandwidth.</p>
+                            <p>To the greatest degree possible, nodes and tiers of an application shall be collocated together. Tiers of an application shall be collocated within a single cloud domain. If the application leverages a legacy backend system of record that cannot be refactored to run in the cloud, then the legacy backend system should be assessed for migration to an appropriate FCS colocation domain.</p>
                         </li>
                     </ol>
                 </div>
             </div>
 
-
-
-
-
-        Latency: To the greatest degree possible, Internet-facing web applications shall be hosted outside of the Trusted Internet Connection (TIC) in entirety. Depending on the degree of integration with FAA backend systems, this may not be feasible.  If this is the case, the bandwidth and latency that traverses the FTI WAN SDP and the TIC should be closely examined to ensure acceptable end-user performance without adverse impact to other FAA applications. Until the FAA has access to DHS-certified �TIC Ready� internet gateways from our CSPs, an Internet-facing �cloud native� application that integrates with legacy backend FAA systems may not make business sense running in an FCS cloud domain depending on the bandwidth
-
-        Colocation: To the greatest degree possible, nodes and tiers of an application shall be collocated together. Tiers of an application shall be collocated within a single cloud domain. If the application leverages a legacy backend system of record that cannot be refactored to run in the cloud, then the legacy backend system should be assessed for migration to an appropriate FCS colocation domain.
-
-        Virtual Machines
-        All Base Virtual Machi
-
-
-
-        Appendix: Avoid Lock in by retooling FAA Data Centers for Medium Gear and High Gear Applications
-
-
-                    </p>
-            </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
         <!-- PowerShell Training Modal -->
@@ -261,7 +229,7 @@
                 <h4 class="modal-title" id="myModalLabel">PowerShell Training</h4>
             </div>
             <div class="modal-body">
-                <p>For better or worse, the administration of Windows Server and the Microsoft Software stack has historically been performed through graphical interfaces. For this reason, many administrators of Microsoft software stacks are not comfortable working a command line environment. Additionally, many systems administrators fall back on the legacy DOS prompt and scripting via *.bat and *.cmd scripts. Over the past few years, Microsoft has spent considerable time building out a richer and full-reatures shell environment called PowerShell, and this environment is essentially at functional parity with the Linux BASH shell. Mastering this environment should be a top priority for all FAA personnel that regularly work with the Microsoft stack.</p>
+                <p>For better or worse, the administration of Windows Server and the Microsoft Software stack has historically been performed through graphical interfaces. For this reason, many administrators of Microsoft software stacks are not comfortable working a command line environment. Additionally, many systems administrators fall back on the legacy DOS prompt and scripting via *.bat and *.cmd scripts. Over the past few years, Microsoft has spent considerable time building out a richer and full-featured shell environment called PowerShell, and this environment is essentially at functional parity with the Linux BASH shell. Mastering this environment should be a top priority for all FAA personnel that regularly work with the Microsoft stack.</p>
                 <p>For those personnel that subscribe to CBTNuggets, there are two very comprehensive courses on PowerShell</p>
                 <ul>
                     <li><a href="https://www.cbtnuggets.com/it-training/powershell-4-foundations">PowerShell 4 Foundations [Requires CBT Nuggets Subscription]</a></li>
@@ -290,7 +258,7 @@
                 <h4 class="modal-title" id="myModalLabel">Linux/UNIX Bash Training</h4>
             </div>
             <div class="modal-body">
-                <p>Most UNIX and Linux systems administators are culturally experienced with working in the Bash shell. However, many personnel can benefit from training beyond core shell scripting to the use of more robust scripting languages such as Python. Here is a range of materials to cover novice to experienced administrators.</p>
+                <p>Most UNIX and Linux systems administrators are culturally experienced with working in the Bash shell. However, many personnel can benefit from training beyond core shell scripting to the use of more robust scripting languages such as Python. Here is a range of materials to cover novice to experienced administrators.</p>
                 <ul>
                     <li><a href="https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-2#!">Introduction to Linux</a></li>
                     <li><a href="http://www.tldp.org/LDP/abs/html/">Advanced Bash-Scripting Guide</a></li>
@@ -306,9 +274,6 @@
 
 
 
-                                    <ol>
-
-                            </ol>
 
 
 
