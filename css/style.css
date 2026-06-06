@@ -23,7 +23,7 @@ hr {
 }
 
 img, embed, object, video {
-	Max-width:100%;
+	max-width: 100%;
 }
 
 .small-cog {
